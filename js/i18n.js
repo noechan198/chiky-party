@@ -137,7 +137,8 @@
 
     const wa = document.querySelector("[data-whatsapp]");
     if (wa && dict["contact.whatsapp"]) {
-      wa.href = `https://wa.me/14374303818?text=${encodeURIComponent(dict["contact.whatsapp"])}`;
+      const phone = (window.CHIKY_CONFIG && window.CHIKY_CONFIG.whatsappNumber) || "14374303818";
+      wa.href = `https://wa.me/${phone}?text=${encodeURIComponent(dict["contact.whatsapp"])}`;
     }
 
     document.querySelectorAll("[data-set-lang]").forEach((btn) => {
