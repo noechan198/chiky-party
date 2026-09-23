@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CHiky Party — Renta de inflables, juegos y caballetes para fiestas infantiles. ¡La diversión está por llegar!">
-  <title>¡CHiky Party! — Renta de Inflables, Juegos y Caballetes</title>
+  <meta name="description" data-i18n-content="meta.description" content="CHiky Party — Renta de inflables, juegos y caballetes para fiestas infantiles. ¡La diversión está por llegar!">
+  <title data-i18n="meta.title">¡CHiky Party! — Renta de Inflables, Juegos y Caballetes</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
@@ -18,18 +18,24 @@
   <div class="sky-confetti" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a href="#inicio" class="brand-mark" aria-label="CHiky Party inicio">
+    <a href="#inicio" class="brand-mark" data-i18n-aria="brand.home" aria-label="CHiky Party inicio">
       <span class="logo-letter c1">C</span><span class="logo-letter c2">H</span><span class="logo-letter c3">i</span><span class="logo-letter c4">k</span><span class="logo-letter c5">y</span>
       <span class="logo-party">Party!</span>
     </a>
-    <nav class="site-nav" aria-label="Principal">
-      <a href="#servicios">Servicios</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto" class="nav-cta">Reservar</a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <nav class="site-nav" data-i18n-aria="nav.label" aria-label="Principal">
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+        <a href="#contacto" class="nav-cta" data-i18n="nav.book">Reservar</a>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-aria="lang.label" aria-label="Idioma">
+        <button type="button" class="lang-btn is-active" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" data-i18n-aria="nav.menu" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
@@ -37,6 +43,7 @@
       <div class="hero-media">
         <img
           src="assets/images/chiky-party-hero.jpg"
+          data-i18n-alt="hero.imgAlt"
           alt="Niños disfrutando inflables, trampolín y caballetes en una fiesta CHiky Party"
           width="1200"
           height="900"
@@ -51,12 +58,12 @@
           </span>
           <span class="brand-title-party">Party!</span>
         </h1>
-        <p class="hero-kicker">Próximamente</p>
-        <p class="hero-date">20 de octubre</p>
-        <p class="hero-tagline">¡La diversión está por llegar!</p>
+        <p class="hero-kicker" data-i18n="hero.kicker">Próximamente</p>
+        <p class="hero-date" data-i18n="hero.date">20 de octubre</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">¡La diversión está por llegar!</p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Quiero reservar</a>
-          <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+          <a href="#contacto" class="btn btn-primary" data-i18n="hero.ctaBook">Quiero reservar</a>
+          <a href="#servicios" class="btn btn-ghost" data-i18n="hero.ctaServices">Ver servicios</a>
         </div>
       </div>
       <div class="hero-bunting" aria-hidden="true">
@@ -66,8 +73,8 @@
 
     <section id="servicios" class="services">
       <div class="section-inner">
-        <h2>Renta de Inflables, Juegos y Caballetes</h2>
-        <p class="section-lead">Todo lo que necesitas para que la fiesta de tus peques sea inolvidable.</p>
+        <h2 data-i18n="services.title">Renta de Inflables, Juegos y Caballetes</h2>
+        <p class="section-lead" data-i18n="services.lead">Todo lo que necesitas para que la fiesta de tus peques sea inolvidable.</p>
 
         <div class="service-grid">
           <article class="service">
@@ -81,8 +88,8 @@
                 <circle cx="96" cy="18" r="10" fill="#EF4444"/>
               </svg>
             </div>
-            <h3>Inflables</h3>
-            <p>Castillos saltarines coloridos para que los niños brinquen sin parar y la energía de la fiesta se sienta desde el primer minuto.</p>
+            <h3 data-i18n="services.inflatables.title">Inflables</h3>
+            <p data-i18n="services.inflatables.text">Castillos saltarines coloridos para que los niños brinquen sin parar y la energía de la fiesta se sienta desde el primer minuto.</p>
           </article>
 
           <article class="service">
@@ -96,8 +103,8 @@
                 <line x1="92" y1="40" x2="92" y2="76" stroke="#1E3A5F" stroke-width="3"/>
               </svg>
             </div>
-            <h3>Juegos</h3>
-            <p>Trampolines y más actividades para mover el cuerpo, reírse juntos y llenar el jardín de emoción.</p>
+            <h3 data-i18n="services.games.title">Juegos</h3>
+            <p data-i18n="services.games.text">Trampolines y más actividades para mover el cuerpo, reírse juntos y llenar el jardín de emoción.</p>
           </article>
 
           <article class="service">
@@ -112,41 +119,44 @@
                 <circle cx="58" cy="52" r="7" fill="#FBBF24"/>
               </svg>
             </div>
-            <h3>Caballetes</h3>
-            <p>Estaciones de arte con pinturas y lienzos para que cada niño cree su propia obra maestra en la fiesta.</p>
+            <h3 data-i18n="services.easels.title">Caballetes</h3>
+            <p data-i18n="services.easels.text">Estaciones de arte con pinturas y lienzos para que cada niño cree su propia obra maestra en la fiesta.</p>
           </article>
         </div>
 
-        <ul class="benefits" aria-label="Lo que ofrecemos">
+        <ul class="benefits" data-i18n-aria="benefits.label" aria-label="Lo que ofrecemos">
           <li>
             <span class="benefit-check" aria-hidden="true">✓</span>
-            <span>Diversión garantizada</span>
+            <span data-i18n="benefits.fun">Diversión garantizada</span>
           </li>
           <li>
             <span class="benefit-check" aria-hidden="true">✓</span>
-            <span>Materiales de calidad</span>
+            <span data-i18n="benefits.quality">Materiales de calidad</span>
           </li>
           <li>
             <span class="benefit-check" aria-hidden="true">✓</span>
-            <span>Puntualidad</span>
+            <span data-i18n="benefits.punctuality">Puntualidad</span>
           </li>
           <li>
             <span class="benefit-check" aria-hidden="true">✓</span>
-            <span>Excelente servicio</span>
+            <span data-i18n="benefits.service">Excelente servicio</span>
           </li>
         </ul>
       </div>
     </section>
-      <div class="section-inner">
-        <h2>Así se vive una fiesta CHiky</h2>
-        <p class="section-lead">Inflatables, juegos y arte bajo el sol: diversión garantizada.</p>
 
-        <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Fotos de fiestas CHiky Party">
+    <section id="galeria" class="gallery">
+      <div class="section-inner">
+        <h2 data-i18n="gallery.title">Así se vive una fiesta CHiky</h2>
+        <p class="section-lead" data-i18n="gallery.lead">Inflatables, juegos y arte bajo el sol: diversión garantizada.</p>
+
+        <div class="carousel" data-carousel aria-roledescription="carousel" data-i18n-aria="gallery.carousel" aria-label="Fotos de fiestas CHiky Party">
           <div class="carousel-viewport">
             <ul class="carousel-track">
               <li class="carousel-slide is-active" data-slide>
                 <img
                   src="assets/images/gallery/02-fiesta-completa.jpg"
+                  data-i18n-alt="gallery.alt1"
                   alt="Niños pintando en caballetes con inflable y trampolín al fondo"
                   width="1200"
                   height="900"
@@ -156,6 +166,7 @@
               <li class="carousel-slide" data-slide>
                 <img
                   src="assets/images/gallery/03-brindis.jpg"
+                  data-i18n-alt="gallery.alt2"
                   alt="Niños brindando en la mesa de fiesta con castillo inflable detrás"
                   width="1200"
                   height="900"
@@ -165,6 +176,7 @@
               <li class="carousel-slide" data-slide>
                 <img
                   src="assets/images/gallery/04-trampolin.jpg"
+                  data-i18n-alt="gallery.alt3"
                   alt="Niños saltando en un trampolín con red de seguridad"
                   width="1200"
                   height="900"
@@ -174,6 +186,7 @@
               <li class="carousel-slide" data-slide>
                 <img
                   src="assets/images/gallery/01-caballetes.jpg"
+                  data-i18n-alt="gallery.alt4"
                   alt="Estación de caballetes artísticos al aire libre en un evento"
                   width="1200"
                   height="900"
@@ -183,31 +196,32 @@
             </ul>
           </div>
 
-          <button type="button" class="carousel-btn carousel-btn-prev" data-carousel-prev aria-label="Foto anterior">
+          <button type="button" class="carousel-btn carousel-btn-prev" data-carousel-prev data-i18n-aria="gallery.prev" aria-label="Foto anterior">
             <span aria-hidden="true">‹</span>
           </button>
-          <button type="button" class="carousel-btn carousel-btn-next" data-carousel-next aria-label="Foto siguiente">
+          <button type="button" class="carousel-btn carousel-btn-next" data-carousel-next data-i18n-aria="gallery.next" aria-label="Foto siguiente">
             <span aria-hidden="true">›</span>
           </button>
 
-          <div class="carousel-dots" data-carousel-dots role="tablist" aria-label="Elegir foto"></div>
+          <div class="carousel-dots" data-carousel-dots role="tablist" data-i18n-aria="gallery.dots" aria-label="Elegir foto"></div>
         </div>
       </div>
     </section>
 
     <section id="contacto" class="contact">
       <div class="section-inner contact-inner">
-        <h2>Agenda tu fecha</h2>
-        <p class="section-lead">Escríbenos y arma la fiesta perfecta con inflables, juegos y caballetes.</p>
+        <h2 data-i18n="contact.title">Agenda tu fecha</h2>
+        <p class="section-lead" data-i18n="contact.lead">Escríbenos y arma la fiesta perfecta con inflables, juegos y caballetes.</p>
         <a
           class="btn btn-whatsapp"
+          data-whatsapp
           href="https://wa.me/14374303818?text=Hola%20CHiky%20Party!%20Quiero%20cotizar%20una%20renta%20para%20mi%20fiesta."
           target="_blank"
           rel="noopener noreferrer"
         >
           WhatsApp
         </a>
-        <p class="contact-note">Abre el 20 de octubre · Reserva con anticipación</p>
+        <p class="contact-note" data-i18n="contact.note">Abre el 20 de octubre · Reserva con anticipación</p>
       </div>
     </section>
   </main>
@@ -217,10 +231,11 @@
       <span class="logo-letter c1">C</span><span class="logo-letter c2">H</span><span class="logo-letter c3">i</span><span class="logo-letter c4">k</span><span class="logo-letter c5">y</span>
       <span class="logo-party">Party!</span>
     </p>
-    <p>Renta de Inflables, Juegos y Caballetes</p>
+    <p data-i18n="footer.tagline">Renta de Inflables, Juegos y Caballetes</p>
     <p class="footer-copy">&copy; <span id="year"></span> CHiky Party</p>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
