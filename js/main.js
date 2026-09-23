@@ -72,7 +72,9 @@
       dot.type = "button";
       dot.className = "carousel-dot" + (i === 0 ? " is-active" : "");
       dot.setAttribute("role", "tab");
-      dot.setAttribute("aria-label", `Ir a foto ${i + 1}`);
+      const lang = window.ChikyI18n?.getSavedLang?.() || "es";
+      const template = window.ChikyI18n?.t?.(lang, "gallery.dot") || `Ir a foto ${i + 1}`;
+      dot.setAttribute("aria-label", template.replace("{n}", String(i + 1)));
       dot.addEventListener("click", () => goTo(i));
       dotsWrap.appendChild(dot);
     });
