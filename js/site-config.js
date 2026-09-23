@@ -9,7 +9,7 @@
  * (usa la misma clave que maintenanceBypassKey)
  */
 window.CHIKY_CONFIG = {
-  maintenance: true,
+  maintenance: false,
   maintenanceBypassKey: "chiky-preview",
   whatsappNumber: "14374303818",
 };
